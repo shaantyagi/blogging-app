@@ -66,3 +66,22 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### About the project:
+
+### Home page: 
+A simple table to display users, with columns as name, company, blog posts .
+Using the /users api fill up the name and company name of each user along with a link to the
+Posts page of that particular user.
+
+### Posts page: 
+This page url takes a parameterised userId and will display the list of posts (use
+the post title) of that particular user. Each of these have a link to the Post Details Page. Used
+pagination with skip, limit params in the api.
+
+### Post Details Page: 
+Used url parameters to get the post id and fetch the details accordingly with
+respective api. Displayed both title and body. There is also a link to Comments. Clicking on the
+comments link will fetch the comments and show them on this page itself. Also there is a
+delete button on this page which will delete the post calling the respective api. After a successful
+response from delete api, it will redirect to the Posts page of respective user again.
